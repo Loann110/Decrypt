@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2024-09-01" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.3.3312" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:9" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="199" order="0"/>
+        <field id="tpd4" name="Date de début" width="74" order="1"/>
+        <field id="tpd5" name="Date de fin" width="77" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <option id="color.recent"><![CDATA[#ffff00 #ff33ff #ff0033 #990099 #0000ff #00cc00 #ff0000 #ccffcc #ffffcc #ffcccc]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="31abc3eaf676469d803019c0c4defd44" name="Project definition" color="#0000ff" meeting="false" start="2024-09-05" duration="24" complete="0" expand="true">
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="1" uid="6ade17fdb9104c2fbd537b2ecd7c258d" name="Jalon A (Audit)" meeting="true" start="2024-10-09" duration="0" complete="0" expand="true">
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="13" uid="0a06b075985c4bb1a851a9aa78848468" name="Components picking" color="#0000ff" meeting="false" start="2024-10-09" duration="32" complete="0" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <depend id="17" type="2" difference="0" hardness="Strong"/>
+            <depend id="22" type="2" difference="15" hardness="Strong"/>
+        </task>
+        <task id="22" uid="c1f49404035348488dbfe70dd7807cd3" name="Bilan énergétique" color="#ffff00" meeting="false" start="2024-12-13" duration="21" complete="0" expand="true">
+            <depend id="23" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="23" uid="71e25652f0f444419e9263ae1e4f9a36" name="Achat de l'alimentation" color="#ffff00" meeting="false" start="2025-01-13" duration="12" complete="0" expand="true">
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="17" uid="793b94f378a54e16aaf4bb79e58fbac6" name="Achats des composants" color="#0000ff" meeting="false" start="2024-11-22" duration="12" complete="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="20" uid="4719cac71e404221a3a9a8e1084118fc" name="Pre radio communication" color="#990099" meeting="false" start="2024-10-09" duration="32" complete="0" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <depend id="21" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="21" uid="3eb61dc143ac48aeb7f0d5253d2e80c0" name="Radio communication" color="#ff33ff" meeting="false" start="2024-11-22" duration="39" complete="0" expand="true">
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="12" uid="0271eb02027240ef807e7419968e8e1a" name="Pre Code" color="#990099" meeting="false" start="2024-10-09" duration="32" complete="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <depend id="19" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="19" uid="6434ce4525f1408488aa51b473b34359" name="Code" color="#ff0033" meeting="false" start="2024-11-22" duration="39" complete="0" expand="true">
+            <depend id="15" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="14" uid="fca84c5490f14493a173e867bfee4770" name="card functionnal analysis" color="#0000ff" meeting="false" start="2024-10-09" duration="12" complete="0" expand="true">
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" uid="57ee3a6523f742f69a59b8f8c3b08f5a" name="pre PCB design" color="#00cc00" meeting="false" start="2024-10-25" duration="20" complete="0" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <depend id="18" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="18" uid="64a79bca26c54364aa30ab492b513000" name="PCB design" color="#00cc00" meeting="false" start="2024-11-22" duration="8" complete="0" expand="true">
+            <depend id="10" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="10" uid="702e8525893e4967b763fb2fca3abc8e" name="PCB routage" color="#00cc00" meeting="false" start="2024-12-04" duration="27" complete="1" expand="true">
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="11" uid="d161c83cb40a4ae6ab03bb38596d599b" name="PCB order" color="#0000ff" meeting="false" start="2025-01-10" duration="6" complete="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <depend id="8" type="2" difference="7" hardness="Strong"/>
+        </task>
+        <task id="4" uid="444730597d5d41c3bfe3bc0ab3543e19" name="PDR" color="#000000" meeting="true" start="2024-11-22" duration="0" complete="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" uid="50cdb518cbd64d848091e493502ce236" name="Jalon B (critical design review) + CDD" color="#000000" meeting="true" start="2025-01-20" duration="0" complete="0" expand="true">
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="8" uid="31036fde1394444eba51c968c806fd10" name="Assembly" color="#0000ff" meeting="false" start="2025-01-29" duration="23" complete="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+            <depend id="16" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="7" uid="488652a524f1429087c680e194010013" name="Audit marketing et commercial" color="#000000" meeting="true" start="2025-03-03" duration="0" complete="0" expand="true"/>
+        <task id="16" uid="1049622e52cf453c8e8e04652709790d" name="Welding" color="#ff0000" meeting="false" start="2025-03-03" duration="16" complete="0" expand="true">
+            <depend id="15" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="15" uid="45f58fbcb2f94a49be9f05fb3eb06ade" name="Test" color="#0000ff" meeting="false" start="2025-03-25" duration="43" complete="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
